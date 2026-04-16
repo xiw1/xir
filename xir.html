@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>X I R</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 100px;
+        font-size: 60px;
+        letter-spacing: 15px;
+    }
+
+    p {
+        color: #aaa;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        background: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background: #45a049;
+    }
+
+    .links a {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+        padding: 10px;
+        background: #222;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        background: #444;
+    }
+</style>
+
+</head>
+
+<body>
+
+<h1>X I R</h1>
+<p>Welcome to my website</p>
+
+<a class="btn" href="#" onclick="showLinks()">Show Links</a>
+
+<div class="links" id="links" style="display:none;">
+    <a href="https://youtube.com" target="_blank">YouTube</a>
+    <a href="https://discord.com" target="_blank">Discord</a>
+    <a href="https://google.com" target="_blank">Google</a>
+</div>
+
+<script>
+function showLinks() {
+    let div = document.getElementById("links");
+    div.style.display = "block";
+}
+</script>
+
+</body>
+</html>
